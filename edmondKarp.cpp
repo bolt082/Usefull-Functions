@@ -26,7 +26,7 @@ int edmondKarp(){
 		depth[s] = 0;
 		while(!q.empty()){
 			int u = q.front();
-			q.pop();
+			q.pop(); 
 			if(u == t)
 				break;
 			for(int i = 0; i < adList[u]; ++i){

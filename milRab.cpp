@@ -41,7 +41,7 @@ ll modulo(ll base, ll exponent, ll mod)
 /*
  * Miller-Rabin primality test, iteration signifies the accuracy
  */
-
+//aa array for better accuracy!
 int aa[] = {2,3,5,7,11,13,17,19,23,29,31,37,41};
 
 bool Miller(ll p,int iteration)

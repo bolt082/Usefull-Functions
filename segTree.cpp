@@ -7,19 +7,6 @@ using namespace std;
 int n, l, r;
 ll a[MAX];
 
-int getPop(ll val){
-    if(val == 1){
-        return 1;
-    }
-    int ret = 0;
-    while(val){
-        if(val%2 == 1)
-            ret++;
-        val /= 2;
-    }
-    return ret;
-}
-
 struct node{
 	int val;
 };
@@ -29,17 +16,15 @@ int lazy[4*MAX];
 
 node createNode(ll val){
 	node ret;
-	int cnt = getPop(val);
-	if(cnt == 1)
-        ret.val = 1;
-    else
-        ret.val = 0;
+	//initialize node here
+
 	return ret;
 }
 
 node merge(node l, node r){
 	node ret;
-	ret.val = l.val + r.val;
+	//merge procedure!!
+
 	return ret;
 }
 
