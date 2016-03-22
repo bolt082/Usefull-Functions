@@ -7,7 +7,6 @@
 using namespace std;
 
 
-//! ћодуль 64-битного числа
 long long abs (long long n)
 {
 	return n < 0 ? -n : n;
@@ -18,7 +17,6 @@ unsigned long long abs (unsigned long long n)
 	return n;
 }
 
-//! ¬озвращает true, если n четное
 template <class T>
 bool even (const T & n)
 {
@@ -26,7 +24,6 @@ bool even (const T & n)
 	return (n & 1) == 0;
 }
 
-//! ƒелит число на 2
 template <class T>
 void bisect (T & n)
 {
@@ -34,7 +31,6 @@ void bisect (T & n)
 	n >>= 1;
 }
 
-//! ”множает число на 2
 template <class T>
 void redouble (T & n)
 {
@@ -42,7 +38,6 @@ void redouble (T & n)
 	n <<= 1;
 }
 
-//! ¬озвращает true, если n - точный квадрат простого числа
 template <class T>
 bool perfect_square (const T & n)
 {
@@ -50,14 +45,12 @@ bool perfect_square (const T & n)
 	return sq*sq == n;
 }
 
-//! ¬ычисл€ет корень из числа, округл€€ его вниз
 template <class T>
 T sq_root (const T & n)
 {
 	return (T) floor (sqrt ((double) n));
 }
 
-//! ¬озвращает количество бит в числе (т.е. минимальное количество бит, которыми можно представить данное число)
 template <class T>
 unsigned bits_in_number (T n)
 {
@@ -72,7 +65,6 @@ unsigned bits_in_number (T n)
 	return result;
 }
 
-//! ¬озвращает значение k-го бита числа (биты нумеруютс€ с нул€)
 template <class T>
 bool test_bit (const T & n, unsigned k)
 {
